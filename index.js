@@ -11,8 +11,8 @@ server.on('error', (err) => {
 });
 
 server.on('message', (msg, rinfo) => {
+  console.log(`server got: ${msg.toString().trim()} from ${rinfo.address}:${rinfo.port}`);
   amplitude.track(JSON.parse(msg));
-  console.log(`server got: ${msg} from ${rinfo.address}:${rinfo.port}`);
 });
 
 server.on('listening', () => {
@@ -21,4 +21,3 @@ server.on('listening', () => {
 });
 
 server.bind(process.env.LISTEN_PORT || 41255);
-
