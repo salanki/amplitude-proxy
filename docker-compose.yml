@@ -1,0 +1,7 @@
+amplitude-proxy:
+  image: salanki/amplitude-proxy
+  environment:
+      API_TOKEN: 12345678
+      LISTEN_PORT: 41255 
+  ports:
+      - 41255:41255

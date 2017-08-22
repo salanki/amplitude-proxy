@@ -1,0 +1,10 @@
+{
+  "name": "amplitude",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "./",
+  "license": "MIT",
+  "dependencies": {
+    "amplitude": "^3.5.0"
+  }
+}
